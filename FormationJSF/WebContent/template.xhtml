@@ -1,22 +1,31 @@
-<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" version="2.0">
-    <jsp:directive.page language="java"
-        contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" />
-    <jsp:text>
-        <![CDATA[ <?xml version="1.0" encoding="ISO-8859-1" ?> ]]>
-    </jsp:text>
-    <jsp:text>
-        <![CDATA[ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> ]]>
-    </jsp:text>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Insert title here</title>
-</head>
-<body>
-<f:view>
-<h:outputLabel value="#{simpleBean.myString}"/>							
-<h:outputLabel value="#{simpleBean.myInt}"/>
-</f:view>
-</body>
-</html>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html" version="2.0">
+	<jsp:directive.page language="java"
+		contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" />
+	<jsp:text>
+		<![CDATA[ <?xml version="1.0" encoding="ISO-8859-1" ?> ]]>
+	</jsp:text>
+	<jsp:text>
+		<![CDATA[ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> ]]>
+	</jsp:text>
+	<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<h:outputStylesheet name="css/style.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="style.css" media="screen" /> -->
+<title>${title}</title>
+</h:head>
+<h:body>
+	<f:view>
+		<h1><ui:insert name="links"/></h1> 
+        <h2> <ui:insert name="data"/> </h2>
+	</f:view>
+	</h:body>
+	</html>
 </jsp:root>

@@ -1,0 +1,59 @@
+/*  
+Template name: Cerulean Elegance
+Template URI: http://templates.arcsin.se/cerulean-elegance-website-template/
+Release date: 2009-04-01
+Last updated: 2009-08-10
+Description: A dark, clean and simple two-column template.
+Author: Viktor Persson
+Author URI: http://arcsin.se/
+
+This template is licensed under a Creative Commons Attribution 2.5 License:
+http://templates.arcsin.se/license/
+*/
+
+
+/* 
+   Reset
+------------------------------------------------------------------- */
+
+/* 
+   General 
+------------------------------------------------------------------- */
+
+html {
+	height: 100%;
+	padding-bottom: 1px; /* force scrollbars */
+}
+
+body {	
+	background: #202020 url('img/body.gif') repeat-x left top;
+	background-image:url('img/body.gif') repeat-x left top;
+	color: #5A5A50;
+	font: normal 0.8em sans-serif;
+	line-height: 1.5em;	
+}
+
+
+/* 
+   Typography 
+------------------------------------------------------------------- */
+
+p {padding: 0.2em 0 1em;}
+
+
+h2 {font: normal 1.8em sans-serif;}
+h3 {font: normal 1.6em sans-serif;}
+h4 {font: normal 1.4em sans-serif;}
+h5 {font: bold 1.2em sans-serif;}
+h6 {font: bold 1em sans-serif;}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #456000;
+	margin-bottom: 0.3em;
+}
+
+h1 
+{
+    font: normal 2em sans-serif;
+    background-color:#0f2168;
+}

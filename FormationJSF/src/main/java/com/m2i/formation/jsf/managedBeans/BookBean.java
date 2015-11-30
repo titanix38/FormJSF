@@ -7,8 +7,7 @@ public class BookBean
 {
 	private int id;
 	private String title;
-	private double price;
-	
+	private double price;	
 	
 	public double getPrice()
 	{

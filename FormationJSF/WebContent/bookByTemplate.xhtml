@@ -1,0 +1,43 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html" version="2.0">
+	<jsp:directive.page language="java"
+		contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8" />
+	<jsp:text>
+		<![CDATA[ <?xml version="1.0" encoding="ISO-8859-1" ?> ]]>
+	</jsp:text>
+	<jsp:text>
+		<![CDATA[ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> ]]>
+	</jsp:text>
+	<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<h:body>
+	<ui:composition template="/template.xhtml">
+		<ui:param name="title" value="My page is mine" />
+		<ui:define name="links">Media</ui:define>
+		<ui:define name="data">
+			<h:form>
+				<h:inputText value="#{bookController.book.id}" />
+				<div id="button">
+					<h:commandButton value="Reponse"
+						action="#{bookController.getBookById}" />
+				</div>
+			</h:form>
+		Id : <h:outputLabel value="#{bookController.book.id}" />
+			<br />
+			<h:outputLabel value="#{bookController.book.title}" />
+			<br />
+			€ <h:outputLabel value="#{bookController.book.priceVAT}" />
+			<br />
+
+		</ui:define>
+	</ui:composition>
+
+</h:body>
+	</html>
+</jsp:root>
