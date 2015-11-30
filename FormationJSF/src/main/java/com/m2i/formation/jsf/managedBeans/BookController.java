@@ -31,5 +31,13 @@ public class BookController
 		// insert dans la BdD
 		return BookControllerEnum.showBook.toString();
 	}
+	public String getBookById()
+	{
+		// Appel à la BdD
+		book.setTitle("Sample");
+		book.setPrice(10.00);
+		return BookControllerEnum.showBook.toString();
+		
+	}
 	
 }
