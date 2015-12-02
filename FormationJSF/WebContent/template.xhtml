@@ -1,6 +1,9 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html" version="2.0">
+	xmlns:h="http://java.sun.com/jsf/html" version="2.0"
+	xmlns:a4j="http://richfaces.org/a4j"
+ 	xmlns:rich="http://richfaces.org/rich">
+ 	
 	<jsp:directive.page language="java"
 		contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" />
 	<jsp:text>
@@ -13,19 +16,23 @@
 		xmlns:ui="http://java.sun.com/jsf/facelets"
 		xmlns:h="http://java.sun.com/jsf/html">
 <h:head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<meta name="author" content="" />
-<h:outputStylesheet name="css/style.css"/>
-<!-- <link rel="stylesheet" type="text/css" href="style.css" media="screen" /> -->
-<title>${title}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<h:outputStylesheet name="css/style.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="style.css" media="screen" /> -->
+	<title>${title}</title>
 </h:head>
 <h:body>
 	<f:view>
-		<h1><ui:insert name="links"/></h1> 
-        <h2> <ui:insert name="data"/> </h2>
+		<h1>
+			<ui:insert name="links" />
+		</h1>
+		<h2>
+			<ui:insert name="data" />
+		</h2>
 	</f:view>
-	</h:body>
+</h:body>
 	</html>
 </jsp:root>

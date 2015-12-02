@@ -4,6 +4,7 @@ import java.awt.print.Book;
 import java.util.*;
 
 import javax.faces.bean.ManagedBean;
+import javax.validation.constraints.*;
 
 import com.m2i.formation.media.entities.*;
 import com.m2i.formation.media.ioc.ConstructObject;
@@ -13,7 +14,12 @@ import com.m2i.formation.media.repositories.*;
 public class BookBean
 {
 	private int id;
+	
+	@NotNull
+	@Size (max=12,message="Must be under 12 chars")
 	private String title;
+	
+	@Size(min=1,max=1000,message="Must be between 1 and 1000")
 	private double price;
 
 	private MediaRepository mr = (MediaRepository) ConstructObject.getInstance().getBean("mediaRepository");
