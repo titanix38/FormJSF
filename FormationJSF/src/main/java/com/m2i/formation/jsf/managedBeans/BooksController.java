@@ -22,8 +22,8 @@ public class BooksController
 	{
 //		Media b = (Media)ConstructObject.getInstance().getBean("media");
 		BookBean b = new BookBean();
-		b.adaptMedia2BookBean();
-		listbooks = b.adaptMedia2BookBean();
+//		b.adaptMedia2BookBean();
+//		listbooks = b.adaptMedia2BookBean();
 		
 		return BookControllerEnum.showBooks.toString();
 	}
