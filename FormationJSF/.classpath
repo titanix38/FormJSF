@@ -26,5 +26,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/FormationJPA3"/>
 	<classpathentry kind="lib" path="C:/Program Files/eclipse/plugins/org.apache.axis_1.4.0.v201411182030/lib/axis.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/eclipse/plugins/javax.xml.rpc_1.1.0.v201209140446/lib/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-8.0.28/lib/annotations-api.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
